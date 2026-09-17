@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Beija Flor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Beija Flor" class="logo-img">
+        <div>
+          <b>Beija Flor</b>
+          <small>Variedades</small>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="login.html" id="linkCuenta">Mi cuenta</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu">☰</button>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <h1 class="titulo">Contactanos</h1>
+
+      <div class="grilla-contacto">
+        <div class="info-contacto">
+          <div class="item-info">
+            <span>📍</span>
+            <div>
+              <h3>Dirección</h3>
+              <p>Fontana 353</p>
+            </div>
+          </div>
+          <div class="item-info">
+            <span>🕐</span>
+            <div>
+              <h3>Horario</h3>
+              <p>7 a 12 hs y 15 a 22 hs<br>Todos los días</p>
+            </div>
+          </div>
+          <div class="item-info">
+            <span>📞</span>
+            <div>
+              <h3>Teléfono</h3>
+              <p>370 510 6770</p>
+            </div>
+          </div>
+          <div class="item-info">
+            <span>💬</span>
+            <div>
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/543705106770" target="_blank">370 510 6770</a></p>
+            </div>
+          </div>
+          <div class="item-info">
+            <span>💳</span>
+            <div>
+              <h3>Medios de pago</h3>
+              <p>Aceptamos todos los medios de pago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <h2>Dejanos tu consulta</h2>
+          <form id="formConsulta">
+            <div class="form-grupo">
+              <label>Nombre</label>
+              <input type="text" id="nombre" required placeholder="Tu nombre">
+            </div>
+            <div class="form-grupo">
+              <label>Teléfono</label>
+              <input type="text" id="telefono" required placeholder="Tu teléfono">
+            </div>
+            <div class="form-grupo">
+              <label>Mensaje</label>
+              <textarea id="mensaje" rows="4" placeholder="Escribí tu consulta..."></textarea>
+            </div>
+            <button type="submit" class="boton">Enviar</button>
+          </form>
+          <div id="msgConsulta" class="aviso" style="display:none;">
+            ✅ Consulta enviada. Gracias!
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><b>🐦 Beija Flor Variedades</b> — Fontana 353</p>
+      <p class="copy">© 2026 Beija Flor Variedades</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

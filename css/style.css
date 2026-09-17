@@ -1,0 +1,776 @@
+/* Estilos Beija Flor Variedades - Proyecto escolar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f3ef;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cabecera {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.cabecera .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  font-size: 28px;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2a9d8f;
+}
+
+.logo b {
+  display: block;
+  color: #2a9d8f;
+  font-size: 17px;
+}
+
+.logo small {
+  color: #777;
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+}
+
+.menu a {
+  color: #555;
+  font-size: 15px;
+}
+
+.menu a:hover,
+.menu a.activo {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.portada {
+  background: linear-gradient(135deg, #e8f5f3 0%, #fff8ee 50%, #fce4ec 100%);
+  padding: 35px 0 40px;
+  text-align: center;
+}
+
+.portada-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.portada-lado {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.deco-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  object-fit: cover;
+  max-height: 200px;
+  background: white;
+}
+
+.portada-centro {
+  padding: 10px 8px;
+}
+
+.portada h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.portada h1 span {
+  color: #2a9d8f;
+}
+
+.portada p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.portada-sub {
+  font-size: 14px !important;
+  color: #888 !important;
+  margin-bottom: 18px !important;
+}
+
+.boton {
+  display: inline-block;
+  background: #2a9d8f;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.boton:hover {
+  background: #21867a;
+}
+
+.boton-borde {
+  background: transparent;
+  border: 2px solid #2a9d8f;
+  color: #2a9d8f;
+}
+
+.boton-borde:hover {
+  background: #2a9d8f;
+  color: white;
+}
+
+.boton-gris {
+  background: #999;
+}
+
+.boton-gris:hover {
+  background: #777;
+}
+
+.boton-verde {
+  background: #27ae60;
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+.boton-rojo {
+  background: #e74c3c;
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+.seccion {
+  padding: 40px 0;
+}
+
+.fondo-claro {
+  background: #fff;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #2a9d8f;
+  margin: 8px auto 0;
+}
+
+.grilla-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.caja-cat {
+  background: white;
+  border: 1px solid #e0ddd5;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.caja-cat:hover {
+  border-color: #2a9d8f;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.cat-foto {
+  height: 160px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.cat-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cat-texto {
+  padding: 14px 12px 18px;
+}
+
+.caja-cat h3 {
+  color: #2a9d8f;
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+
+.caja-cat p {
+  color: #777;
+  font-size: 13px;
+}
+
+.caja-cat .icono {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.portada-botones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grilla-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.caja-info {
+  background: #f5f3ef;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.caja-info .icono {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.caja-info h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.caja-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.caja-info a {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.filtro {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.filtro:hover,
+.filtro.activo {
+  background: #2a9d8f;
+  border-color: #2a9d8f;
+  color: white;
+}
+
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.producto {
+  background: white;
+  border: 1px solid #e0ddd5;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.producto-img {
+  height: 180px;
+  background: #e8f5f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  overflow: hidden;
+}
+
+.foto-prod {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-info {
+  padding: 12px;
+}
+
+.producto-cat {
+  font-size: 11px;
+  color: #2a9d8f;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.producto-nombre {
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.producto-precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f7a6f;
+  margin-bottom: 10px;
+}
+
+.producto-botones {
+  display: flex;
+  gap: 6px;
+}
+
+.badge-agotado {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: white;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.mostrar {
+  display: flex;
+}
+
+.modal-caja {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 380px;
+}
+
+.modal-caja h3 {
+  margin-bottom: 10px;
+  color: #2a9d8f;
+}
+
+.modal-botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.mensaje-exito {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 110;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensaje-exito.mostrar {
+  display: flex;
+}
+
+.mensaje-caja {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 320px;
+}
+
+.mensaje-caja p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.mensaje-caja .pequeño {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.form-grupo {
+  margin-bottom: 12px;
+}
+
+.form-grupo label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: #2a9d8f;
+}
+
+.grilla-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-info {
+  display: flex;
+  gap: 12px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e0ddd5;
+}
+
+.item-info span {
+  font-size: 22px;
+}
+
+.item-info h3 {
+  font-size: 14px;
+}
+
+.item-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.item-info a {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.formulario {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e0ddd5;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  color: #2a9d8f;
+  font-size: 18px;
+}
+
+.aviso {
+  margin-top: 15px;
+  padding: 12px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.caja-login {
+  max-width: 360px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e0ddd5;
+  text-align: center;
+}
+
+.caja-login h1 {
+  color: #2a9d8f;
+  margin-bottom: 5px;
+}
+
+.texto-ayuda {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.nota-login {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888;
+  background: #f5f3ef;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.pedido {
+  background: white;
+  border: 1px solid #e0ddd5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.pedido h3 {
+  color: #2a9d8f;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.pedido p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.pedido .fecha {
+  font-size: 12px;
+  color: #999;
+}
+
+.sin-pedidos {
+  text-align: center;
+  color: #888;
+  padding: 40px;
+}
+
+.pie {
+  background: #1e3a36;
+  color: #c8d6d3;
+  padding: 25px 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pie b {
+  color: white;
+}
+
+.copy {
+  font-size: 13px;
+  margin-top: 8px;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .btn-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 0;
+  }
+
+  .menu.abierto {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .portada h1 {
+    font-size: 26px;
+  }
+
+  .portada-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .portada-lado {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .deco-img {
+    max-width: 48%;
+    max-height: 140px;
+  }
+
+  .grilla-contacto {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Bienvenida */
+.caja-bienvenida {
+  background: white;
+  border: 1px solid #e0ddd5;
+  border-radius: 14px;
+  padding: 28px 26px;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.65;
+}
+
+.caja-bienvenida h2 {
+  color: #2a9d8f;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.caja-bienvenida p {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 15px;
+}
+
+.caja-bienvenida .pago {
+  text-align: center;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Stock admin */
+.item-stock {
+  background: white;
+  border: 1px solid #e0ddd5;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item-stock span {
+  font-size: 14px;
+}
+
+.estado-ok {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.estado-no {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.form-grupo select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+}

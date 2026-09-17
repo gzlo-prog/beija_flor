@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beija Flor Variedades</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Beija Flor" class="logo-img">
+        <div>
+          <b>Beija Flor</b>
+          <small>Variedades</small>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" id="linkCuenta">Mi cuenta</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu">☰</button>
+    </div>
+  </header>
+
+  <!-- PORTADA CON IMAGENES -->
+  <section class="portada">
+    <div class="contenedor portada-grid">
+
+      <!-- columna izquierda con fotos -->
+      <div class="portada-lado">
+        <img src="img/deco-libreria1.jpg" alt="Librería" class="deco-img">
+        <img src="img/deco-escolares.jpg" alt="Artículos escolares" class="deco-img">
+      </div>
+
+      <!-- centro texto -->
+      <div class="portada-centro">
+        <h1>Beija Flor <span>Variedades</span></h1>
+        <p>Librería · Cosméticos · Artesanías · Regalos</p>
+        <p class="portada-sub">Fontana 353</p>
+        <div class="portada-botones">
+          <a href="productos.html" class="boton">Ver productos</a>
+          <a href="contacto.html" class="boton boton-borde">Contacto</a>
+        </div>
+      </div>
+
+      <!-- columna derecha con fotos -->
+      <div class="portada-lado">
+        <img src="img/deco-natura.jpg" alt="Natura" class="deco-img">
+        <img src="img/deco-papeleria.jpg" alt="Papelería" class="deco-img">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BIENVENIDA -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="caja-bienvenida">
+        <h2>¡Bienvenidos a Beija Flor Variedades!</h2>
+        <p>
+          Acá vas a encontrar calidad y buenos precios.
+          Regalos, combos y productos de bienestar Natura y Avon.
+        </p>
+        <p>
+          También útiles escolares y de oficina para docentes y estudiantes,
+          y accesorios para cotillón.
+        </p>
+        <p>
+          <b>Pedí lo tuyo y consultá disponibilidad.</b><br>
+          Lo que no tenemos, te lo conseguimos.
+        </p>
+        <p class="pago">💳 Aceptamos todos los medios de pago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="seccion fondo-claro">
+    <div class="contenedor">
+      <h2 class="titulo">Nuestras categorías</h2>
+      <div class="grilla-categorias">
+
+        <a href="productos.html?cat=libreria" class="caja-cat">
+          <div class="cat-foto">
+            <img src="img/cat-libreria.jpg" alt="Librería">
+          </div>
+          <div class="cat-texto">
+            <h3>Librería</h3>
+            <p>Útiles escolares y de oficina</p>
+          </div>
+        </a>
+
+        <a href="productos.html?cat=cosmeticos" class="caja-cat">
+          <div class="cat-foto">
+            <img src="img/cat-cosmeticos.jpg" alt="Cosméticos">
+          </div>
+          <div class="cat-texto">
+            <h3>Cosméticos</h3>
+            <p>Natura, Avon y más</p>
+          </div>
+        </a>
+
+        <a href="productos.html?cat=artesanias" class="caja-cat">
+          <div class="cat-foto">
+            <img src="img/cat-artesanias.jpg" alt="Artesanías">
+          </div>
+          <div class="cat-texto">
+            <h3>Artesanías</h3>
+            <p>Canastos, bolsos y tejidos</p>
+          </div>
+        </a>
+
+        <a href="productos.html?cat=regalos" class="caja-cat">
+          <div class="cat-foto">
+            <img src="img/cat-regalos.jpg" alt="Regalos">
+          </div>
+          <div class="cat-texto">
+            <h3>Regalos</h3>
+            <p>Mates, termos y combos</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="grilla-info">
+        <div class="caja-info">
+          <div class="icono">📍</div>
+          <h3>Ubicación</h3>
+          <p>Fontana 353</p>
+        </div>
+        <div class="caja-info">
+          <div class="icono">🕐</div>
+          <h3>Horario</h3>
+          <p>7 a 12 hs y 15 a 22 hs<br>Todos los días</p>
+        </div>
+        <div class="caja-info">
+          <div class="icono">📞</div>
+          <h3>Teléfono</h3>
+          <p>370 510 6770</p>
+        </div>
+        <div class="caja-info">
+          <div class="icono">💳</div>
+          <h3>Medios de pago</h3>
+          <p>Aceptamos todos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><b>Beija Flor Variedades</b> — Fontana 353</p>
+      <p class="copy">2026 - Beija Flor Variedades</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

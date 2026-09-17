@@ -1,0 +1,24 @@
+BEIJA FLOR VARIEDADES
+=====================
+
+Como usar:
+1. Copiar la carpeta beija-flor a C:\xampp\htdocs\
+2. Activar Apache en XAMPP
+3. Abrir http://localhost/beija-flor
+
+Paginas:
+- index.html = inicio
+- productos.html = catalogo (boton Comprar / Cancelar)
+- registro.html = crear cuenta (correo y contraseña)
+- login.html = iniciar sesion clientes
+- mi-cuenta.html = ver mis datos y mis pedidos
+- admin-login.html = entrar como dueño
+- admin.html = ver TODOS los pedidos
+- contacto.html = datos del local
+
+Admin (dueño):
+Usuario: admin
+Contraseña: beijaflor
+
+Los clientes se registran con su correo y contraseña.
+Vos ves todos los pedidos desde el panel de administrador.

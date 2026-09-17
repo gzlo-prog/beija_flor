@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse - Beija Flor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Beija Flor" class="logo-img">
+        <div>
+          <b>Beija Flor</b>
+          <small>Variedades</small>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" id="linkCuenta">Mi cuenta</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu">☰</button>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <div class="caja-login">
+        <h1>Crear cuenta</h1>
+        <p class="texto-ayuda">Registrate para hacer pedidos más fácil</p>
+
+        <form id="formRegistro">
+          <div class="form-grupo">
+            <label>Nombre</label>
+            <input type="text" id="regNombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-grupo">
+            <label>Correo electrónico</label>
+            <input type="email" id="regEmail" required placeholder="tu@email.com">
+          </div>
+          <div class="form-grupo">
+            <label>Contraseña</label>
+            <input type="password" id="regClave" required placeholder="Mínimo 4 caracteres" minlength="4">
+          </div>
+          <div class="form-grupo">
+            <label>Teléfono (opcional)</label>
+            <input type="text" id="regTel" placeholder="370 123 4567">
+          </div>
+          <button type="submit" class="boton">Registrarme</button>
+        </form>
+
+        <p id="errorReg" class="error" style="display:none;"></p>
+        <p id="okReg" class="aviso" style="display:none;">✅ Cuenta creada. Ya podés iniciar sesión.</p>
+
+        <p class="texto-ayuda" style="margin-top:15px;">
+          ¿Ya tenés cuenta? <a href="login.html" style="color:#2a9d8f;font-weight:bold;">Iniciar sesión</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><b>🐦 Beija Flor Variedades</b> — Fontana 353</p>
+      <p class="copy">© 2026 Beija Flor Variedades</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

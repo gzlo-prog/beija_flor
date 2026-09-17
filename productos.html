@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Beija Flor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Beija Flor" class="logo-img">
+        <div>
+          <b>Beija Flor</b>
+          <small>Variedades</small>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="activo">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html" id="linkCuenta">Mi cuenta</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu">☰</button>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <h1 class="titulo">Nuestros productos</h1>
+
+      <div class="filtros">
+        <button class="filtro activo" data-cat="todos">Todos</button>
+        <button class="filtro" data-cat="libreria">📚 Librería</button>
+        <button class="filtro" data-cat="cosmeticos">💄 Cosméticos</button>
+        <button class="filtro" data-cat="artesanias">🧺 Artesanías</button>
+        <button class="filtro" data-cat="regalos">🧉 Regalos</button>
+      </div>
+
+      <div class="grilla-productos" id="listaProductos"></div>
+    </div>
+  </main>
+
+  <!-- Modal compra -->
+  <div class="modal" id="modalCompra">
+    <div class="modal-caja">
+      <h3 id="modalTitulo">Confirmar pedido</h3>
+      <p id="modalTexto"></p>
+      <div class="form-grupo">
+        <label>Tu nombre</label>
+        <input type="text" id="nombreCliente" placeholder="Escribí tu nombre">
+      </div>
+      <div class="form-grupo">
+        <label>Teléfono / WhatsApp</label>
+        <input type="text" id="telCliente" placeholder="Ej: 370 123 4567">
+      </div>
+      <div class="modal-botones">
+        <button class="boton" id="btnConfirmar">Confirmar compra</button>
+        <button class="boton boton-gris" id="btnCancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje exito -->
+  <div class="mensaje-exito" id="mensajeExito">
+    <div class="mensaje-caja">
+      <p>Listo! Tu pedido fue enviado</p>
+      <p class="pequeño">Te vamos a avisar por WhatsApp</p>
+      <button class="boton" id="btnCerrarMensaje">Aceptar</button>
+    </div>
+  </div>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><b>🐦 Beija Flor Variedades</b> — Fontana 353</p>
+      <p class="copy">© 2026 Beija Flor Variedades</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

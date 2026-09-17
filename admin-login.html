@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Beija Flor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Beija Flor" class="logo-img">
+        <div>
+          <b>Beija Flor</b>
+          <small>Admin</small>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="login.html">Mi cuenta</a>
+      </nav>
+      <button class="btn-menu" id="btnMenu">☰</button>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="contenedor">
+      <div class="caja-login">
+        <h1>Panel del local</h1>
+        <p class="texto-ayuda">Solo para el dueño</p>
+
+        <form id="formAdminLogin">
+          <div class="form-grupo">
+            <label>Usuario</label>
+            <input type="text" id="adminUser" required placeholder="Usuario">
+          </div>
+          <div class="form-grupo">
+            <label>Contraseña</label>
+            <input type="password" id="adminClave" required placeholder="Contraseña">
+          </div>
+          <button type="submit" class="boton">Entrar al panel</button>
+        </form>
+
+        <p id="errorAdmin" class="error" style="display:none;">Datos incorrectos</p>
+
+        <p class="nota-login">
+          Usuario: <b>admin</b><br>
+          Contraseña: <b>beijaflor</b>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><b>🐦 Beija Flor Variedades</b> — Fontana 353</p>
+      <p class="copy">© 2026 Beija Flor Variedades</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
